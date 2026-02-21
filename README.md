@@ -1,4 +1,4 @@
-# 🏥 ZeeCare Medical Institute - Hospital Management System
+# CURA - Hospital Management System
 
 A comprehensive Hospital Management System built with the MERN stack, providing separate interfaces for patients and administrators to manage appointments, doctors, and medical services efficiently.
 
@@ -13,16 +13,14 @@ A comprehensive Hospital Management System built with the MERN stack, providing 
 - [Tech Stack](#-tech-stack)
 - [Project Structure](#-project-structure)
 - [Prerequisites](#-prerequisites)
-- [Installation](#-installation)
 - [Environment Variables](#-environment-variables)
 - [Database Schema](#-database-schema)
 - [API Endpoints](#-api-endpoints)
 - [Authentication & Authorization](#-authentication--authorization)
 - [Usage](#-usage)
 - [Screenshots](#-screenshots)
-- [Contributing](#-contributing)
 - [License](#-license)
-- [Contact](#-contact)
+
 
 ## ✨ Features
 
@@ -158,35 +156,7 @@ Before running this project, make sure you have the following installed:
 - **MongoDB** (local installation or MongoDB Atlas)
 - **Git**
 
-## 🛠 Installation
 
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/yourusername/hospital-management-system.git
-cd hospital-management-system
-```
-
-### 2. Backend Setup
-
-```bash
-cd Backend
-npm install
-```
-
-### 3. Frontend Setup
-
-```bash
-cd ../frontend
-npm install
-```
-
-### 4. Dashboard Setup
-
-```bash
-cd ../dashboard
-npm install
-```
 
 ## 🔧 Environment Variables
 
@@ -322,37 +292,6 @@ CLOUDINARY_API_SECRET=your-cloudinary-api-secret
 - Passwords hashed using bcrypt with salt rounds of 10
 - Password comparison using bcrypt.compare()
 
-## 🚀 Usage
-
-### 1. Start the Backend Server
-
-```bash
-cd Backend
-npm run dev
-# Server runs on http://localhost:4000
-```
-
-### 2. Start the Frontend (Patient Portal)
-
-```bash
-cd frontend
-npm run dev
-# Frontend runs on http://localhost:5173
-```
-
-### 3. Start the Dashboard (Admin Panel)
-
-```bash
-cd dashboard
-npm run dev
-# Dashboard runs on http://localhost:5174
-```
-
-### 4. Access the Applications
-
-- **Patient Portal**: http://localhost:5173
-- **Admin Dashboard**: http://localhost:5174
-- **API Server**: http://localhost:4000
 
 ## 👥 User Roles & Access
 
@@ -392,56 +331,12 @@ npm run dev
 ![Doctor Management](screenshots/doctor-management.png)
 ```
 
-## 🤝 Contributing
 
-We welcome contributions! Please follow these steps:
-
-### 1. Fork the Repository
-```bash
-git fork https://github.com/yourusername/hospital-management-system.git
-```
-
-### 2. Create a Feature Branch
-```bash
-git checkout -b feature/your-feature-name
-```
-
-### 3. Make Changes
-- Follow the existing code style
-- Add comments for complex logic
-- Update documentation if needed
-
-### 4. Test Your Changes
-```bash
-# Run backend tests
-cd Backend && npm test
-
-# Run frontend tests  
-cd frontend && npm test
-
-# Run dashboard tests
-cd dashboard && npm test
-```
-
-### 5. Commit and Push
-```bash
-git add .
-git commit -m "Add: your feature description"
-git push origin feature/your-feature-name
-```
-
-### 6. Create Pull Request
+ll Request
 - Provide clear description of changes
 - Include screenshots if UI changes
 - Reference any related issues
 
-## 🐛 Known Issues & Limitations
-
-1. **Message Schema Validation**: Message field has `exactLength: 10` which seems restrictive
-2. **NIC Validation**: Different lengths (12 vs 13 digits) in User vs Appointment schemas
-3. **Phone Validation**: Inconsistent lengths (10 vs 11 digits) across schemas
-4. **Cloudinary Config**: Duplicate `cloud_name` property in server.js
-5. **Error Handling**: Some API calls lack comprehensive error handling
 
 ## 🔄 Future Enhancements
 
@@ -456,19 +351,7 @@ git push origin feature/your-feature-name
 - [ ] **Multi-language Support**
 - [ ] **Dark Mode** theme
 
-## 📝 Development Guidelines
 
-### Code Style
-- Use ES6+ features
-- Follow consistent naming conventions
-- Add JSDoc comments for functions
-- Use meaningful variable names
-
-### Git Workflow
-- Create feature branches for new features
-- Write descriptive commit messages
-- Use conventional commits format
-- Squash commits before merging
 
 ### Testing
 - Write unit tests for controllers
@@ -476,33 +359,6 @@ git push origin feature/your-feature-name
 - Test responsive design on multiple devices
 - Validate forms and error handling
 
-## 🔧 Troubleshooting
-
-### Common Issues
-
-#### 1. MongoDB Connection Error
-```bash
-Error: MongoNetworkError: failed to connect to server
-```
-**Solution**: Ensure MongoDB is running and connection string is correct
-
-#### 2. CORS Error
-```bash
-Access to XMLHttpRequest blocked by CORS policy
-```
-**Solution**: Check CORS configuration in app.js and ensure frontend URLs are whitelisted
-
-#### 3. JWT Token Error
-```bash
-JsonWebTokenError: invalid token
-```
-**Solution**: Clear browser cookies and login again
-
-#### 4. Image Upload Issues
-```bash
-Error: Failed To Upload Doctor Avatar To Cloudinary
-```
-**Solution**: Verify Cloudinary credentials in environment variables
 
 ## 📄 License
 
@@ -511,7 +367,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ```
 MIT License
 
-Copyright (c) 2025 ZeeCare Medical Institute
+Copyright (c) 2026 CURA
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -532,16 +388,4 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
 
-## 📞 Contact
 
-For questions, suggestions, or support:
-
-- **Email**: zeecare@hospital.com
-- **GitHub**: [@yourusername](https://github.com/yourusername)
-- **LinkedIn**: [Your LinkedIn](https://linkedin.com/in/yourprofile)
-
----
-
-⭐ **Star this repository if you found it helpful!**
-
-Made with ❤️ by [Your Name](https://github.com/yourusername)
