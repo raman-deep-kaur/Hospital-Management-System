@@ -7,7 +7,7 @@ A comprehensive Hospital Management System built with the MERN stack, providing 
 [![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)](https://mongodb.com/)
 [![Express.js](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge)](https://expressjs.com/)
 
-## 📋 Table of Contents
+## Table of Contents
 
 - [Features](#-features)
 - [Tech Stack](#-tech-stack)
@@ -18,25 +18,25 @@ A comprehensive Hospital Management System built with the MERN stack, providing 
 - [API Endpoints](#-api-endpoints)
 - [Authentication & Authorization](#-authentication--authorization)
 - [Usage](#-usage)
-- [Screenshots](#-screenshots)
-- [License](#-license)
 
 
-## ✨ Features
 
-### 🔐 Authentication & Authorization
+
+## Features
+
+### Authentication & Authorization
 - **Multi-role Authentication**: Separate login systems for Patients, Doctors, and Admins
 - **JWT Token-based Security**: Secure authentication with HTTP-only cookies
 - **Role-based Access Control**: Different permissions for different user types
 
-### 👨‍⚕️ Admin Dashboard Features
+### Admin Dashboard Features
 - **Doctor Management**: Add, view, and manage doctor profiles with avatar uploads
 - **Admin Management**: Create new admin accounts
 - **Appointment Management**: View, accept, reject, and track all appointments
 - **Message Center**: View and manage patient inquiries
 - **Real-time Statistics**: Dashboard with appointment and doctor counts
 
-### 👤 Patient Portal Features
+### Patient Portal Features
 - **User Registration & Login**: Secure patient account creation
 - **Appointment Booking**: Schedule appointments with preferred doctors
 - **Department Selection**: Choose from 9 medical departments
@@ -44,7 +44,7 @@ A comprehensive Hospital Management System built with the MERN stack, providing 
 - **Medical History**: Track previous visits and appointments
 - **Contact Form**: Send messages to hospital administration
 
-### 🏥 Medical Departments
+### Medical Departments
 - Pediatrics
 - Orthopedics  
 - Cardiology
@@ -55,7 +55,7 @@ A comprehensive Hospital Management System built with the MERN stack, providing 
 - Dermatology
 - ENT (Ear, Nose, Throat)
 
-## 🚀 Tech Stack
+## Tech Stack
 
 ### Backend
 - **Node.js** - JavaScript runtime environment
@@ -82,7 +82,7 @@ A comprehensive Hospital Management System built with the MERN stack, providing 
 - **ESLint** - Code linting
 - **dotenv** - Environment variable management
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 hospital-management-system/
@@ -147,9 +147,8 @@ hospital-management-system/
 └── README.md
 ```
 
-## 📋 Prerequisites
+## Prerequisites
 
-Before running this project, make sure you have the following installed:
 
 - **Node.js** (v16 or higher)
 - **npm** or **yarn**
@@ -158,7 +157,7 @@ Before running this project, make sure you have the following installed:
 
 
 
-## 🔧 Environment Variables
+## Environment Variables
 
 Create a `.env` file in the `Backend/config/` directory:
 
@@ -186,7 +185,7 @@ CLOUDINARY_API_KEY=your-cloudinary-api-key
 CLOUDINARY_API_SECRET=your-cloudinary-api-secret
 ```
 
-## 🗄 Database Schema
+## Database Schema
 
 ### User Schema
 ```javascript
@@ -243,7 +242,7 @@ CLOUDINARY_API_SECRET=your-cloudinary-api-secret
 }
 ```
 
-## 🔗 API Endpoints
+## API Endpoints
 
 ### User Routes (`/api/v1/user`)
 
@@ -275,7 +274,7 @@ CLOUDINARY_API_SECRET=your-cloudinary-api-secret
 | POST | `/send` | Send message | No |
 | GET | `/getall` | Get all messages | Admin |
 
-## 🔐 Authentication & Authorization
+## Authentication & Authorization
 
 ### JWT Token System
 - **Patient Token**: Stored in `patientToken` cookie
@@ -295,7 +294,7 @@ CLOUDINARY_API_SECRET=your-cloudinary-api-secret
 
 ## 👥 User Roles & Access
 
-### 🏥 Admin Features
+### Admin Features
 1. **Login** to admin dashboard
 2. **View Dashboard** with statistics
 3. **Manage Appointments** (view, accept, reject, delete)
@@ -304,7 +303,7 @@ CLOUDINARY_API_SECRET=your-cloudinary-api-secret
 6. **View All Doctors**
 7. **Read Patient Messages**
 
-### 👤 Patient Features
+### Patient Features
 1. **Register** new account
 2. **Login** to patient portal
 3. **Book Appointments** with doctor selection
@@ -312,33 +311,12 @@ CLOUDINARY_API_SECRET=your-cloudinary-api-secret
 5. **Send Messages** to administration
 6. **View Hospital Information**
 
-### 👨‍⚕️ Doctor Features
+### Doctor Features
 - Doctors are added by admins
 - Profile management through admin dashboard
 - Department assignment and specialization
 
-## 🖼 Screenshots
-
-*Add screenshots of your application here*
-
-```markdown
-### Patient Portal
-![Home Page](screenshots/patient-home.png)
-![Appointment Booking](screenshots/appointment-form.png)
-
-### Admin Dashboard  
-![Dashboard](screenshots/admin-dashboard.png)
-![Doctor Management](screenshots/doctor-management.png)
-```
-
-
-ll Request
-- Provide clear description of changes
-- Include screenshots if UI changes
-- Reference any related issues
-
-
-## 🔄 Future Enhancements
+## Future Enhancements
 
 - [ ] **Real-time Notifications** using Socket.io
 - [ ] **Email Integration** for appointment confirmations
@@ -358,34 +336,5 @@ ll Request
 - Add integration tests for API endpoints
 - Test responsive design on multiple devices
 - Validate forms and error handling
-
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-```
-MIT License
-
-Copyright (c) 2026 CURA
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-```
 
 
